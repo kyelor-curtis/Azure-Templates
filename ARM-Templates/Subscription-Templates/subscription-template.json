@@ -1,0 +1,34 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-08-01/managementGroupDeploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionAlias":{
+            "type": "string"
+        },
+        "subscriptionWorkload":{
+            "type": "string"
+        },
+        "subscriptionDisplayName":{
+            "type": "string"
+        },
+        "billingScope":{
+            "type": "string"
+        }
+    },
+    "functions": [],
+    "variables": {},
+    "resources": [
+        {
+            "scope": "/",
+            "type": "Microsoft.Subscription/aliases",
+            "apiVersion": "2020-09-01",
+            "name": "[parameters('subscriptionAlias')]",
+            "properties": {
+                "workload": "[parameters('subscriptionWorkload')]",
+                "displayName": "[parameters('subscriptionDisplayName')]",
+                "billingScope": "[parameters('billingScope')]"
+            }
+        }
+    ],
+    "outputs": {}
+}

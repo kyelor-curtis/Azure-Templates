@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionAlias": {
+            "value": "Management-Subscription"
+        },
+        "subscriptionWorkload": {
+            "value": "DevTest"
+        },
+        "subscriptionDisplayName": {
+            "value": "Management Subscription"
+        },
+        "billingScope": {
+            "value": "/providers/Microsoft.Billing/billingAccounts/73dd68db-a19b-5d98-64f9-67e66be31a38:05c51fed-6f6b-4682-9b10-37ecfb150ad0_2019-05-31/billingProfiles/JAUQ-RYQ6-BG7-PGB/invoiceSections/AOFP-C5BH-PJA-PGB"
+        }
+    }
+}

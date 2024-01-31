@@ -1,0 +1,18 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "mgName": {
+            "value": "Citi-Management-Group"
+        },
+        "mgScope": {
+            "value": "/"
+        },
+        "mgDisplayName": {
+            "value": "Citi"
+        },
+        "mgParentId": {
+            "value": "3eec6962-e291-4b13-8682-22962e46f898"
+        }
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "mode": "All",
+    "policyRule":
+      {
+        "if": {
+            "anyOf": [
+              {
+                "field": "type",
+                "equals": "Microsoft.Storage/storageAccounts"
+              },
+              {
+                "field": "Microsoft.Storage/storageAccounts/allowBlobPublicAccess",
+                "equals": true
+              },
+              {
+                "not": {
+                  "field": "Microsoft.Storage/storageAccounts/publicNetworkAccess",
+                  "equals": "Disabled"
+                }
+              }
+            ]
+        },
+        "then": {
+            "effect": "deny"
+        }
+      },
+    "parameters": {}
+  }
